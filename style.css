@@ -1,0 +1,23 @@
+*::before, *::after, * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blue;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.strength-meter {
+  position: relative;
+  height: 2rem;
+  width: 90%;
+  border: 3px solid lightblue;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.strength-meter::before {
+  content: '';
+  position: absolute;
+}
