@@ -1,11 +1,17 @@
 # Title (replace with your title)
 
-Introductory paragraph (replace this with your text)
+This tutorial will show you the essentials of regular expressions.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
-
+A regular expression (regex) is a sequence of characters that specifies a search pattern in text. Here are a few different regular expressions:
+```
+/[A-Z]/g
+/[a-z]/g
+/[0-9]/
+/[^0-9a-zA-Z/s]/g
+/(.)\1/g
+```
 ## Table of Contents
 
 - [Anchors](#anchors)
