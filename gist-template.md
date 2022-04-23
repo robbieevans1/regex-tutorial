@@ -5,6 +5,13 @@ This tutorial will show you the essentials of regular expressions.
 ## Summary
 
 A regular expression (regex) is a sequence of characters that specifies a search pattern in text. Here are a few different regular expressions that I have used in a simple password checker to see if the a password matches certain criteria:
+
+1st regex searches to see if there are any uppercase letters
+2nd regex searches to see if there are any lowercase letters
+3rd regex searches to see if there are any numbers
+4th regex searches to see if there are any special characters
+5th regex searches to see if there are any repeated characters
+
 ```
 /[A-Z]/g
 /[a-z]/g
