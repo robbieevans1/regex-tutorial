@@ -153,6 +153,15 @@ Examples of above:
 ```
 
 ### Greedy and Lazy Match
+a greedy match is one where we attempt to match the longest possible string that corresponds to our regex and a quantified character is repeated as much as possible. a lazy match in contrast looks for sthe smallest match possible in a string and attempts to repeat itself as little as possible
+
+Examples:
+
+```
+/".+"/g  would be a greedy match and could possibly return the follow as a match "The" ocean is "beautiful"
+/".+?"/g  would be a lazy match and would return and "The", and "beautiful" in the string "The" ocean is "beautiful" it appears to be more accurate in what the regex was trying to calculate in this instance.
+
+```
 
 ### Boundaries
 
