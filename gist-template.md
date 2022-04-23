@@ -4,7 +4,7 @@ This tutorial will show you the essentials of regular expressions.
 
 ## Summary
 
-A regular expression (regex) is a sequence of characters that specifies a search pattern in text. Here are a few different regular expressions:
+A regular expression (regex) is a sequence of characters that specifies a search pattern in text. Here are a few different regular expressions that I have used in a simple password checker to see if the a password matches certain criteria:
 ```
 /[A-Z]/g
 /[a-z]/g
