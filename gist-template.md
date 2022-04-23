@@ -40,7 +40,7 @@ A regular expression (regex) is a sequence of characters that specifies a search
 ### Quantifiers
 Quantifiers are used to define how many instances of character, group, or character class must exist in the string for their to be a match.
 
-Examples of quantifiers:
+Examples:
 * `+` - Allows a match one or more times
 * `*` - Allows a match zero or more times
 * `?` - Allows a match zero or one times
@@ -54,11 +54,24 @@ Examples of above:
 ### OR Operator
 
 ### Character Classes
+Character Classes help distinguish certain characters from others.
+
+Examples:
+* `.` - matches anything except something that is on a new line
+* `\d` - matches any digit, i.e. [0-9]
+* `\w` - matches any letter or numbers
+
+Examples of above:
+```
+/.en/g  matches both 'Ben' and 'ten'
+/\d/g  matches '2' in a string that has '2day'. 
+/\w/g  matches all numbers and letters in string
+```
 
 ### Flags
 Flags are characters after the forward slash in a regex that are optional parameters that changes the way the regex inside the forward slashes behaves. More than one flag can be used in a regex expression.
 
-Examples of flags:
+Examples:
 * `g` - Global, allows you to have multiple matches within a string and not just the first one.
 * `m` - Multiline, enable boundary characters to match the end of every single line in a string instead of only the beginning and ending of the string.
 * `i` - Case-insensitive search, makes the expression case-insensitive
