@@ -138,8 +138,19 @@ Examples of above:
 
 ```
 
-
 ### Bracket Expressions
+Bracket expressions are used similiarly to parenthese, but different in the respect that they allow you to group the characters contained in the brackets without regard to their order.
+
+Examples:
+
+- `[]` - parentheses are used as capturing groups of characters so the characters aren't matched in isolation
+
+Examples of above:
+
+```
+/[re]/g  would match 'e' in 'the' 're' in 'Share' and 'er' in 'thinner'
+
+```
 
 ### Greedy and Lazy Match
 
@@ -151,4 +162,7 @@ Examples of above:
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Robert Evans is a Fullstack Web Dev student seeking full time employment.
+
+GH Profile:
+https://github.com/Robcabobb
