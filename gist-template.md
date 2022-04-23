@@ -175,19 +175,30 @@ Examples:
 Examples of above:
 
 ```
-/\bdog\b/g this would match 'dog' in the string 'The dog looked dogged in his demeanor'
+/\bdog\b/g this would match 'dog' in the string 'The dog looked dogged in his demeanor' and not dog in 'dogged'
 
 /\B-\B/g the '-' would match in the string 'Fed - Ex delivers everyday'
 ```
 
-
 ### Back-references
+Back references are used to match the same characters that were matched before by a capturing group and makes the regex reusable.
+
 
 ### Look-ahead and Look-behind
+Look-ahead and Look-behind also called Look-around are used to capture values before a certain specified text
+
+Examples:
+```
+/(?<=His name is).*/gm 'Robbie' would be matched in the string 'His name is Robbie'
+
+/.*(?=is his name)/gm 'Adam would be matched in the string 'Adam is his name'
+
+```
+
 
 ## Author
 
-Robert Evans is a Fullstack Web Dev student seeking full time employment.
+Robert Evans is a Fullstack Web Dev student currently enrolled in a coding bootcamp.
 
 GH Profile:
 https://github.com/Robcabobb
