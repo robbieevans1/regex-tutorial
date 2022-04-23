@@ -19,6 +19,7 @@ A regular expression (regex) is a sequence of characters that specifies a search
 /[^0-9a-zA-Z/s]/g
 /(.)\1/g
 ```
+
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -37,46 +38,71 @@ A regular expression (regex) is a sequence of characters that specifies a search
 
 ### Anchors
 
+Anchors do not assist in matching characters, but rather help to limit how in which a regex matches a string by telling the engine where matches can begin or end starting from the beginning of the string.
+
+Examples:
+
+- `^` - Allows a match at the beginning of a string.
+- `$` - Allows a match at the end of a string.
+
+
+Examples of above:
+
+```
+/The/gm  matches all 'The' groups at the beginning of each line in the string.
+/go$/g  matches one 'go' at the end of a string if there is one.
+```
+
 ### Quantifiers
+
 Quantifiers are used to define how many instances of character, group, or character class must exist in the string for their to be a match.
 
 Examples:
-* `+` - Allows a match one or more times
-* `*` - Allows a match zero or more times
-* `?` - Allows a match zero or one times
+
+- `+` - Allows a match one or more times
+- `*` - Allows a match zero or more times
+- `?` - Allows a match zero or one times
 
 Examples of above:
+
 ```
 /e+/g  matches 'e' characters where there are one or more in a row
-/se*/g  matches 's' alone or 'se' and and 'e' that follows it. 
+/se*/g  matches 's' alone or 'se' and and 'e' that follows it.
 /af?/g  matches all 'a' and optionally matches 'af.' whatever is before ? is optional. this regex won't match 'f' if there isn't an a before it
 ```
+
 ### OR Operator
 
 ### Character Classes
+
 Character Classes help distinguish certain characters from others.
 
 Examples:
-* `.` - matches anything except something that is on a new line
-* `\d` - matches any digit, i.e. [0-9]
-* `\w` - matches any letter or numbers
+
+- `.` - matches anything except something that is on a new line
+- `\d` - matches any digit, i.e. [0-9]
+- `\w` - matches any letter or numbers
 
 Examples of above:
+
 ```
 /.en/g  matches both 'Ben' and 'ten'
-/\d/g  matches '2' in a string that has '2day'. 
+/\d/g  matches '2' in a string that has '2day'.
 /\w/g  matches all numbers and letters in string
 ```
 
 ### Flags
+
 Flags are characters after the forward slash in a regex that are optional parameters that changes the way the regex inside the forward slashes behaves. More than one flag can be used in a regex expression.
 
 Examples:
-* `g` - Global, allows you to have multiple matches within a string and not just the first one.
-* `m` - Multiline, enable boundary characters to match the end of every single line in a string instead of only the beginning and ending of the string.
-* `i` - Case-insensitive search, makes the expression case-insensitive
+
+- `g` - Global, allows you to have multiple matches within a string and not just the first one.
+- `m` - Multiline, enable boundary characters to match the end of every single line in a string instead of only the beginning and ending of the string.
+- `i` - Case-insensitive search, makes the expression case-insensitive
 
 Examples of above:
+
 ```
 /dog/g  matches all 'dog' sequence of letters in string
 /dog/m  matches all 'dog' sequence of letters in string at the    beginning of each line.
