@@ -44,6 +44,19 @@ A regular expression (regex) is a sequence of characters that specifies a search
 ### Character Classes
 
 ### Flags
+Flags are characters after the forward slash in a regex that are optional parameters that changes the way the regex inside the forward slashes behaves. More than one flag can be used in a regex expression.
+
+Examples of flags:
+* `g` - Global, allows you to have multiple matches within a string and not just the first one.
+* `m` - Multiline, enable boundary characters to match the end of every single line in a string instead of only the beginning and ending of the string.
+* `i` - Case-insensitive search, makes the expression case-insensitive
+
+Examples of above:
+```
+/dog/g  matches all 'dog' sequence of letters in string
+/dog/m  matches all 'dog' sequence of letters in string at the    beginning of each line.
+/dog/gi  matches 'dog' or 'Dog' sequence of letters in string
+```
 
 ### Grouping and Capturing
 
