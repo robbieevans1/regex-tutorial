@@ -72,6 +72,21 @@ Examples of above:
 ```
 
 ### OR Operator
+Acts similarly to a boolean OR operator, gives optionality between potential matches.
+
+Examples:
+
+- `|` - Acts similarly to a boolean OR operator and matches the expression before or after the '|' sign.
+- `[]` - Matches anything within the brackets.
+
+
+Examples of above:
+
+```
+/R(e|a)/g would match the 'Re' in 'Real' and 'Ra' in 'Race'  
+/[ea]/g  would match the 'ee' in 'See', 'ea' in 'peal' and 'aa' in 'Paak'
+```
+
 
 ### Character Classes
 
