@@ -125,6 +125,19 @@ Examples of above:
 ```
 
 ### Grouping and Capturing
+This is a way of capturing more than one character as a set.
+
+Examples:
+
+- `()` - parentheses are used as capturing groups of characters so the characters aren't matched in isolation
+
+Examples of above:
+
+```
+/(dog)/g  matches all 'dog' sequence of letters in string but not 'do', 'og', or 'dg'.
+
+```
+
 
 ### Bracket Expressions
 
