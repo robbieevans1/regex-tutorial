@@ -38,7 +38,19 @@ A regular expression (regex) is a sequence of characters that specifies a search
 ### Anchors
 
 ### Quantifiers
+Quantifiers are used to how many instances of character, group, or character class must exist in the string for their to be a match
 
+Examples of quantifiers:
+* `+` - Allows a match one or more times
+* `*` - Allows a match zero or more times
+* `?` - Allows a match zero or one times
+
+Examples of above:
+```
+/e+/g  matches 'e' characters where there are one or more in a row
+/se*/g  matches 's' alone or 'se' and and 'e' that follows it. 
+/af?/g  matches all 'a' and optionally matches 'af.' whatever is before ? is optional. this regex won't match 'f' if there isn't an a before it
+```
 ### OR Operator
 
 ### Character Classes
