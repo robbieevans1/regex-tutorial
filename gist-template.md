@@ -164,6 +164,22 @@ Examples:
 ```
 
 ### Boundaries
+Boundaries are similiar to anchor in that they attempt to match a position and not character. They can word or not-word boundaries and are zero-length.
+
+Examples:
+
+- `\b` - this is an anchor that matches the position of where a word starts and ends.
+
+- `\B` - this will match any position that is not a word boundary
+
+Examples of above:
+
+```
+/\bdog\b/g this would match 'dog' in the string 'The dog looked dogged in his demeanor'
+
+/\B-\B/g the '-' would match in the string 'Fed - Ex delivers everyday'
+```
+
 
 ### Back-references
 
