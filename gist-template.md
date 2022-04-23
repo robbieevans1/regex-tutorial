@@ -38,7 +38,7 @@ A regular expression (regex) is a sequence of characters that specifies a search
 ### Anchors
 
 ### Quantifiers
-Quantifiers are used to how many instances of character, group, or character class must exist in the string for their to be a match
+Quantifiers are used to define how many instances of character, group, or character class must exist in the string for their to be a match.
 
 Examples of quantifiers:
 * `+` - Allows a match one or more times
